@@ -6,6 +6,9 @@ turtle.shape("turtle")
 turtle.speed(200)
 
 
+turtle.color("green")
+
+
 def square(sidelength):
     for i in range(4):
         turtle.forward(sidelength)

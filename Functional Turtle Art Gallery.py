@@ -51,6 +51,9 @@ turtle.forward(100)
 turtle.left(90)
 turtle.forward(150)
 turtle.right(90)
-
+turtle.pendown()
+for i in range(100):
+    turtle.forward(5)
+    turtle.right(5)
 
 turtle.exitonclick()
