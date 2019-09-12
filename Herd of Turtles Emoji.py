@@ -57,21 +57,26 @@ for i in range(10):
     bawb.right(5)
 bawb.end_fill()
 
-# fang
+# teeth
 bowb.penup()
 bowb.right(90)
 bowb.forward(35)
-bowb.left(90)
-bowb.forward(50)
+bowb.right(90)
+bowb.forward(120)
+bowb.right(180)
 bowb.pendown()
-bowb.begin_fill()
-bowb.right(120)
-bowb.forward(15)
-bowb.right(120)
-bowb.forward(15)
-bowb.right(120)
-bowb.forward(15)
-bowb.end_fill()
+for i in range(9):
+    bowb.begin_fill()
+    bowb.right(120)
+    bowb.forward(15)
+    bowb.right(120)
+    bowb.forward(15)
+    bowb.right(120)
+    bowb.forward(15)
+    bowb.end_fill()
+    bowb.penup()
+    bowb.forward(30)
+    bowb.pendown()
 
 # right eye
 bbob.penup()
@@ -103,4 +108,31 @@ bobb.circle(50)
 bobb.end_fill()
 bobb.color("black")
 bobb.circle(50)
+
+# makes turtles pretty
+Bob.penup()
+Bob.right(90)
+Bob.forward(50)
+
+Bobe.penup()
+Bobe.right(90)
+Bobe.forward(100)
+
+bawb.penup()
+bawb.right(180)
+bawb.forward(200)
+
+bowb.penup()
+bowb.right(90)
+bowb.forward(200)
+bowb.color("brown")
+
+bbob.penup()
+bbob.right(90)
+bbob.forward(300)
+
+bobb.penup()
+bobb.right(90)
+bobb.forward(300)
+
 turtle.exitonclick()
